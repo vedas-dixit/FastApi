@@ -1,0 +1,49 @@
+# Bytecode files
+__pycache__/
+*.py[cod]
+myenv
+# Virtual environments
+venv/
+env/
+.myenv/
+*.venv/
+Lib/  # Windows virtual environment libraries
+lib/  # Linux/macOS virtual environment libraries
+bin/  # Linux/macOS virtual environment binaries
+Scripts/  # Windows virtual environment scripts
+Include/  # Windows virtual environment include files
+
+# Logs & Debugging files
+logs/
+*.log
+*.out
+*.err
+
+# Ignore dotenv environment files (if used)
+.env
+.env.local
+.env.*.local
+
+# Ignore Python dependencies
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+*.iml
+
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled Cython files
+*.so
+
+# Ignore Uvicorn socket files (if running on UNIX)
+*.sock
+
+# Docker related (if using Docker)
+docker-compose.override.yml
+.dockerignore
