@@ -9,6 +9,10 @@ items = {"1": "Apple", "2": "Banana"}
 class Item(BaseModel):
     item_name: str
 
+@app.get("/items")
+def get_item():
+    return {"items": items}
+
 @app.get("/items/{item_id}")
 def get_item(item_id: str):
     return {"item_id": item_id, "item_name": items.get(item_id, "Not found")}
